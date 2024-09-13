@@ -9,9 +9,8 @@ body {
   background-repeat: no-repeat;
   width: 100vw;
   overflow-x: hidden;
-  position: fixed;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 .navlist {
@@ -54,13 +53,12 @@ button:hover {
   background-color: gray;
   transition: 0.5s ease-in-out;
 }
-button:not(:hover){
+button:not(:hover) {
   transition: 0.5s ease-in-out;
 }
-.btn{
+.btn {
   display: flex;
   justify-content: center;
-
 }
 .prin {
   display: flex;
@@ -101,8 +99,8 @@ ul a:hover {
   height: 465px;
   transition: height 2s;
 }
-aside{
-  background-image: linear-gradient(to bottom,#085046,#182c63,#193049);
+aside {
+  background-image: linear-gradient(to bottom, #085046, #182c63, #193049);
   width: 300px;
   border-radius: 20px;
   height: 280px;
@@ -110,17 +108,17 @@ aside{
   margin-top: 40px;
   position: fixed;
 }
-aside h1{
+aside h1 {
   color: white;
   text-indent: 20px;
   font: normal 17pt arial;
 }
-aside p{
+aside p {
   margin-top: 10px;
   color: white;
   font: normal 15pt arial;
 }
-.creator{
+.creator {
   width: 1100px;
   margin: auto;
   background-color: rgb(32, 32, 63);
@@ -129,25 +127,91 @@ aside p{
   margin-top: 30px;
   margin-bottom: 40px;
 }
-.creator h1{
+.creator h1 {
   text-align: center;
   color: white;
   font: bold 25pt arial;
   text-shadow: 1px 1px 10px black;
   margin-bottom: 10px;
 }
-.creator p{
+.creator p {
   font: bold 14pt arial;
   color: rgba(255, 255, 255, 0.836);
   text-indent: 15px;
   padding: 1px;
 }
-.topnav.active :hover{
+.topnav.active :hover {
   background-color: rgb(202, 202, 202);
   transition: width 0.5s ease-in-out;
   width: 100px;
 }
-.topnav a:not(:hover){
+.topnav a:not(:hover) {
   transition: width 0.5s ease-in-out;
   width: 100%;
+}
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+  }
+  .navlist{
+    width: 400px;
+  }
+  .creator {
+    width: 300px;
+    height: 870px;
+    position: static;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .creator h1 {
+    font: normal 18pt arial;
+  }
+  .creator p {
+    font: normal 10pt arial;
+  }
+  aside {
+    width: 150px;
+    height: 200px;
+    position: static;
+    margin: auto;
+    margin-top: 10px;
+  }
+  aside p {
+    font: normal 10pt arial;
+    position: relative;
+  }
+  ul {
+    width: 200px;
+    height: 270px;
+    padding: 15px;
+  }
+  ul a {
+    font: normal 10pt arial;
+  }
+  .prin.active {
+    display: flex;
+    justify-content: center;
+    pointer-events: all;
+    height: 300px;
+    transition: height 2s;
+  }
+  body::-webkit-scrollbar {
+  display: none;
+}
+}
+
+@media (max-width: 1200px){
+  aside{
+    position: static;
+    margin: auto;
+    margin-top: 10px;
+    width: 400px;
+  }
+  .creator{
+    position: static;
+  }
+  body{
+    background-size: cover;
+    background-position: center;
+  }
 }
