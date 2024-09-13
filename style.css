@@ -152,6 +152,10 @@ aside p {
 @media (max-width: 768px) {
   body {
     background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    width: 100vw;
+    height: 100vh;
   }
   .navlist{
     width: 400px;
@@ -213,5 +217,26 @@ aside p {
   body{
     background-size: cover;
     background-position: center;
+    background-repeat: repeat;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@media (max-width: 1280px){
+  aside{
+    position: static;
+    margin: auto;
+    margin-top: 10px;
+    width: 400px;
+  }
+  .creator{
+    position: static;
+  }
+  body{
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    width: 100vw;
+    height: 100vh;
   }
 }
